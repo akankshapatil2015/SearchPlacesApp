@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Places</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Search Box -->
+    <input type="text" id="search-box" placeholder="Search Places..." autofocus>
+
+    <!-- Table for Search Results -->
+    <table id="results-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Place Name</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="3" id="status-message">Start searching</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Pagination & Data Limit -->
+    <div class="pagination">
+      <button id="prev-page">Prev</button>
+      <span id="pagination-info">Page 1</span>
+      <button id="next-page">Next</button>
+      <label>
+        Results per page:
+        <input type="number" id="results-limit" value="5" min="1" max="10">
+      </label>
+    </div>
+  </div>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
